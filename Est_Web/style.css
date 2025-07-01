@@ -1,0 +1,197 @@
+/* ESTRUCTURA GENERAL */
+body {
+    margin: 0;
+    padding-top: 100px; /* Espacio para nav fijo */
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* NAV FIJO */
+nav {
+    width: 100%;
+    background-color: rgb(188, 45, 45);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav h1 {
+    color: white;
+    margin: 0;
+    font-size: 36px;
+}
+
+/* CONTENEDOR LOGIN / WELCOME */
+.login-container {
+    margin-top: 20px;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container input[type="email"],
+.login-container input[type="tel"],
+.login-container select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(188, 45, 45);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.login-container input[type="radio"] {
+    margin: 0 5px 0 15px;
+}
+
+.message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.success {
+    color: green;
+    margin-bottom: 10px;
+}
+
+/* BIENVENIDA */
+.mapa-img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* ENLACES DE OPCIONES */
+.opciones {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.opciones a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 5px;
+}
+
+.opciones a:hover {
+    background-color: #000;
+}
+
+/* CONTENEDORES ADMIN */
+.admin-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* FORMULARIO DE AGREGAR */
+.form-agregar {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-agregar input,
+.form-agregar select {
+    margin: 5px;
+    padding: 5px;
+}
+
+/* TABLAS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #444;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+/* BOTONES Y ACCIONES */
+.acciones form {
+    display: inline;
+}
+
+.volver {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* CAJONES EN MAPA */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cajon {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 1.2;
+    padding-top: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.libre {
+    background-color: green;
+}
+
+.ocupado {
+    background-color: red;
+}
+
+.discapacitado {
+    border: 3px dashed yellow;
+}
